@@ -64,18 +64,20 @@ export const styles = StyleSheet.create({
         backgroundColor: "#ffff",
         width: '100%',
         flexDirection: 'row',
-      
+        
     },
     navitemicon:{
         backgroundColor: '#EFEFEF',
         padding:22,
         borderRadius:50,
-        width:70,  
+        width:70, 
+        marginLeft: 1, 
     },
+
     navitem:{
         justifyContent: 'center',
         alignItems: 'center',
-        width: 110,
+        width: 90,
     },
     txticons:{
         fontWeight: 'bold',
@@ -128,7 +130,7 @@ export const styles = StyleSheet.create({
         fontSize: 15,
     },
     txtfatura:{
-        marginLeft:6,
+        marginLeft:4,
         color: '#818490',
         marginTop: 6,
     },
@@ -138,6 +140,11 @@ export const styles = StyleSheet.create({
         marginTop:4,
         marginLeft:6,
     },
+    txtlimite:{
+    marginLeft:4,
+    color: '#818490',
+    marginTop:5,
+    },
     txtSpan:{
         color: '#A755DB',
     },
@@ -146,11 +153,67 @@ export const styles = StyleSheet.create({
     },
     txtparcel:{
         fontWeight: 'bold',
-        marginLeft: 20,
+        marginLeft: 15,
         marginTop:20,
+        padding:20,
+        borderRadius:50,
+        width:170,
+        fontSize:16,
+        backgroundColor: '#efefef',
     },
-    footer:{},
-
+    separador:{
+        marginTop:15,
+        marginBottom: 17,
+        height: 1,
+        
+    },
+    separador2:{
+        marginTop:15,
+        marginBottom: 17,
+        height: 1,
+        backgroundColor:'#ccc',
+    },
+    txtvalue:{
+        fontWeight: 'bold',
+        fontSize: 17,
+        marginLeft:20,
+    },
+    textassist:{
+        fontWeight: 'bold',
+        fontSize: 15,
+        marginLeft: 20,
+    },
+    viewemprest:{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingLeft:1,
+        paddingRight:30,
+    },
+    txtvalue2:{
+        marginLeft:22,
+        marginTop:16,
+        color:'#818490'
+    },
+    txtbol:{
+        marginLeft:22,
+        fontWeight:'bold',
+        fontSize: 25,    
+    },
+    footer:{
+        flexDirection: 'row',
+        backgroundColor:'#ffffff',
+        width:350,
+        borderRadius: 50,
+        padding:20,
+        justifyContent: 'center',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+        position: 'fixed',
+        zIndex: 10000,
+    },
+    direction:{
+        fontWeight: 'bold',
+    },
     // Margem de 20 pixels para todos os lados
     margin20:{
         margin:20,

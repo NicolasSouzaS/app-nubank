@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { Text, View, Image, ScrollView } from 'react-native';
 import {styles} from './css/Styles';
 
-import { Feather, MaterialCommunityIcons, SimpleLineIcons, AntDesign, MaterialIcons, Entypo, FontAwesome, FontAwesome5, Fontisto, Octicons } from '@expo/vector-icons'; 
+import { Feather, MaterialCommunityIcons, SimpleLineIcons, AntDesign, MaterialIcons, Entypo, FontAwesome, FontAwesome5, Fontisto, Octicons, Ionicons } from '@expo/vector-icons'; 
 
 
 export default function App() {
@@ -35,7 +35,7 @@ export default function App() {
           <Feather name='chevron-right' size={16} color="black"/>
           </View>
         </View>
-        <Text style={styles.dinheiro}>R$ 800,25</Text>
+        <Text style={styles.dinheiro}>R$ 81.256,46</Text>
       </View>
 
    
@@ -130,13 +130,48 @@ export default function App() {
           </View>
         </View>
         <Text style={styles.txtfatura}>Fatura atual</Text>
-        <Text style={styles.dinheirocard}>R$ 680,40</Text>
-        <Text>Limite disponivel de <Text style={styles.limite}>••••••••</Text></Text>
+        <Text style={styles.dinheirocard}>R$ 28.312,40</Text>
+        <Text style={styles.txtlimite}>Limite disponivel de <Text style={styles.limite}>••••••••</Text></Text>
       </View>
       <View style={styles.parcelar}>
         <Text style={styles.txtparcel}>Parcelar compras</Text>
       </View>
+      <View style={styles.separador}></View>
+
+      <View>
+        <Text style={styles.txtvalue}>Acompanhe também</Text>
+
+        <View style={styles.card}>
+          <MaterialCommunityIcons
+            name='credit-card-multiple-outline'
+            size={24}
+            color='#000'
+            />
+            <Text style={styles.textassist}>Assistente de pagamentos</Text>
+        </View>
+
+        
+      </View>
+      
+      <View style={styles.separador2}></View>
+
+      <View>
+        <View style={styles.viewemprest}>
+        <Text style={styles.txtvalue}>Empréstimos</Text>
+        <Feather name='chevron-right' size={16} color="black"/>
+        </View>
+        <Text style={styles.txtvalue2}>Valor disponível de até</Text>
+        <Text style={styles.txtbol}>••••</Text>
+      </View>
+      
       </ScrollView>
+
+      <View style={styles.footer}>
+        <Ionicons style={styles.direction} name="swap-vertical" size={24} color="#8303d2" />
+        <MaterialIcons name="attach-money" size={24} color="silver" />
+        <SimpleLineIcons name="bag" size={24} color="silver" />
+      </View>
+
       <StatusBar style="auto"/>
     </View>
   );
